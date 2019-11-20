@@ -3,6 +3,8 @@ package br.com.abud.projetodispositivosmoveis;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,8 +22,12 @@ public class FullImageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_full_image);
 
         fullImage = findViewById(R.id.fullImageId);
-        int imageid = getIntent().getIntExtra("imageId", R.drawable.ic_launcher_background);
-        fullImage.setImageResource(imageid);
+        //Aqui está pegando a imagem que foi transformada em umarray de Byte para ser passada da Activity de compartilhamento de imagem para essa
+        byte[] byteArray = getIntent().getByteArrayExtra("image");
+        //Aqui está pegando o array de byte e convertendo em Bitmap para poder exibir ela mp ImageView
+        Bitmap image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+
+        fullImage.setImageBitmap(image);
 
         //Botao voltar para o texto
         textButton = findViewById(R.id.textButtonId);

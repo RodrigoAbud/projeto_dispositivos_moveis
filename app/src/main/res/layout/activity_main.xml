@@ -26,16 +26,36 @@
             android:layout_height="wrap_content"
             android:text="TAG" />
 
-        <EditText
-            android:id="@+id/tagId"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Digite a TAG" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tagEditTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="Digite a TAG"
+                android:inputType="text"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/tagButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_send"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
 
         <EditText
-            android:id="@+id/textId"
+            android:id="@+id/contentEditTextId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
@@ -64,7 +84,7 @@
             android:layout_weight="1"
             android:backgroundTint="#1E88E5"
             android:text="Texto"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"/>
 
         <Button
             android:id="@+id/imageButtonId"
