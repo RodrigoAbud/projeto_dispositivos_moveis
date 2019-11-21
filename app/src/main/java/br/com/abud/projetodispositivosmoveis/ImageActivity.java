@@ -72,7 +72,7 @@ public class ImageActivity extends AppCompatActivity {
 
         cameraButton = findViewById(R.id.fabCameraId);
 
-        tagEditText = findViewById(R.id.tagEditTextId);
+        tagEditText = findViewById(R.id.editText);
         tagButton = findViewById(R.id.tagButtonId);
 
         listImageShare = new ArrayList<>();
