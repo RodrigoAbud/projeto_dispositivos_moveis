@@ -34,7 +34,8 @@
         <ImageView
             android:id="@+id/fullImageId"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:contentDescription="@string/fullimage_place_desc"/>
     </LinearLayout>
 
     <LinearLayout
@@ -54,13 +55,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Texto" />
+            android:contentDescription="@string/text_button_desc"
+            android:text="@string/text_button"/>
 
         <Button
             android:id="@+id/imageButtonId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Image" />
+            android:contentDescription="@string/image_button_desc"
+            android:text="@string/image_button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

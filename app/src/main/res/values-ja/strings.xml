@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_hint">共有したいテキストをここに入力します</string>
+    <string name="app_name">モバイルデバイスプロジェクト</string>
+    <string name="image_button">画像</string>
+    <string name="text_button">テキスト</string>
+    <string name="tag_hint">タグを入力してください</string>
+    <string name="no_tag">TAGを入力してください</string>
+
+    <string name="tag_place_desc">タグを入力する場所</string>
+    <string name="tag_button_desc">タグを送信するボタン</string>
+    <string name="text_place_desc">入力したTAGリンクテキストが表示される場所、または変更または作成できる場所</string>
+    <string name="image_button_desc">画像共有画面に移動するボタン</string>
+    <string name="text_button_desc">テキスト共有画面に移動するボタン</string>
+    <string name="photo_button_desc">写真を撮って共有するボタン</string>
+    <string name="image_place_desc">共有画像が表示される場所</string>
+    <string name="fullimage_place_desc">拡大画像が表示される場所</string>
+</resources>

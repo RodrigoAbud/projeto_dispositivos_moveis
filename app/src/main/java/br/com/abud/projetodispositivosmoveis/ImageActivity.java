@@ -35,8 +35,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -100,14 +98,14 @@ public class ImageActivity extends AppCompatActivity {
         tagButton.setOnClickListener((v) ->{
             //Verifica se alguma tag foi preenchida ou cancela a ação
             if(tagEditText.getText().length() == 0){
-                Toast.makeText(this, "Digite uma tag", Toast.LENGTH_SHORT);
+                Toast.makeText(this, R.string.no_tag, Toast.LENGTH_SHORT);
                 return;
             }
 
 
             tagEditText.clearFocus();
             //Esconde o teclado
-            esconderTeclado(v);
+            hideKeyboard(v);
 
             //Cria no Firebase uma coleção com o nome "_tag informada"
             collMensagensReference = FirebaseFirestore.getInstance().collection(String.format(
@@ -131,7 +129,7 @@ public class ImageActivity extends AppCompatActivity {
     }
 
     //Esconde teclado
-    private void esconderTeclado (View v){
+    private void hideKeyboard(View v){
         InputMethodManager ims = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         ims.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
@@ -269,7 +267,7 @@ public class ImageActivity extends AppCompatActivity {
                         Bitmap figura = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
                         imageItem.setImageBitmap(figura);
 
-                        //Adiciona um Listener para se a imagem do Grid For Clicada abrir ela na activity DisplayImage
+                        //Adiciona um Listener para se a imagem do Grid For Clicada abrir ela na FullImageActivity
                         imageItem.setOnClickListener(vImage ->{
                             //CAptura a imagem que está sendo exibida no ImageView do Grid
                             Drawable imagem = ((ImageView) vImage).getDrawable();
@@ -280,12 +278,13 @@ public class ImageActivity extends AppCompatActivity {
                             bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
                             byte[] b = baos.toByteArray();
 
-                            //Chama a DisplayImage passando a imagem convertida em bytes para ser exibida
+                            //Chama a FullImageActivity passando a imagem convertida em bytes para ser exibida
                             Intent intent = new Intent(mContext, FullImageActivity.class);
                             intent.putExtra("figura", b);
                             mContext.startActivity(intent);
 
                         });
+
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

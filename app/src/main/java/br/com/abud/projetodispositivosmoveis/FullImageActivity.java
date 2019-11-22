@@ -23,8 +23,8 @@ public class FullImageActivity extends AppCompatActivity {
 
         fullImage = findViewById(R.id.fullImageId);
         //Aqui está pegando a imagem que foi transformada em umarray de Byte para ser passada da Activity de compartilhamento de imagem para essa
-        byte[] byteArray = getIntent().getByteArrayExtra("image");
-        //Aqui está pegando o array de byte e convertendo em Bitmap para poder exibir ela mp ImageView
+        byte[] byteArray = getIntent().getByteArrayExtra("figura");
+        //Aqui está pegando o array de byte e convertendo em Bitmap para poder exibir ela na FullImageActivity
         Bitmap image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
 
         fullImage.setImageBitmap(image);

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_hint">Ingrese aquí el texto que desea compartir</string>
+    <string name="app_name">Proyecto de dispositivos móviles</string>
+    <string name="image_button">IMAGEN</string>
+    <string name="text_button">TEXTO</string>
+    <string name="tag_hint">Ingrese una etiqueta</string>
+    <string name="no_tag">Por favor, introduzca una etiqueta</string>
+
+    <string name="tag_place_desc">Lugar para ingresar una etiqueta</string>
+    <string name="tag_button_desc">Botón para enviar la etiqueta</string>
+    <string name="text_place_desc">Donde se muestra el texto vinculado TAG escrito o se puede cambiar o crear</string>
+    <string name="image_button_desc">Botón para ir a la pantalla para compartir imágenes</string>
+    <string name="text_button_desc">Botón para ir a la pantalla para compartir texto</string>
+    <string name="photo_button_desc">Botón para tomar una foto y compartirla</string>
+    <string name="image_place_desc">Place where shared images are displayed</string>
+    <string name="fullimage_place_desc">Lugar donde aparece la imagen ampliada</string>
+</resources>

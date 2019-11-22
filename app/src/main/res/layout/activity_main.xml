@@ -36,19 +36,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/tag_place_desc"
                 android:ems="10"
-                android:hint="Digite a TAG"
-                android:inputType="text"
-                android:layout_weight="1"/>
+                android:hint="@string/tag_hint"
+                android:inputType="text" />
 
             <ImageView
                 android:id="@+id/tagButtonId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_send"
-                android:layout_weight="0"
                 android:layout_gravity="center"
-                android:tint="@color/colorPrimary"/>
+                android:layout_weight="0"
+                android:contentDescription="@string/tag_button_desc"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@android:drawable/ic_menu_send" />
 
 
         </LinearLayout>
@@ -58,11 +60,12 @@
             android:id="@+id/contentEditTextId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/text_place_desc"
             android:ems="10"
             android:gravity="start"
+            android:hint="@string/text_hint"
             android:inputType="textMultiLine"
-            android:hint="Digite o texto aqui"
-            android:scrollbars="vertical"/>
+            android:scrollbars="vertical" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#1E88E5"
-            android:text="Texto"
+            android:text="@string/text_button"
             android:textColor="@android:color/background_light"/>
 
         <Button
@@ -91,6 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Image" />
+            android:contentDescription="@string/image_button_desc"
+            android:text="@string/image_button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

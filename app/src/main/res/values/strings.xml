@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Projeto Dispositivos Móveis</string>
+    <string name="text_hint">Enter here the text you want to share</string>
+    <string name="app_name">Mobile Devices Project</string>
+    <string name="image_button">IMAGE</string>
+    <string name="text_button">TEXT</string>
+    <string name="tag_hint">Enter a TAG</string>
+    <string name="no_tag">Please enter a TAG</string>
+
+    <string name="tag_place_desc">Place to enter a TAG</string>
+    <string name="tag_button_desc">Button to send the TAG</string>
+    <string name="text_place_desc">Where the typed TAG linked text is displayed or can be changed or created</string>
+    <string name="image_button_desc">Button to go to image sharing screen</string>
+    <string name="text_button_desc">Button to go to text sharing screen</string>
+    <string name="photo_button_desc">Button to take picture and share it</string>
+    <string name="image_place_desc">Place where shared images are displayed</string>
+    <string name="fullimage_place_desc">Place where the enlarged image appears</string>
 </resources>

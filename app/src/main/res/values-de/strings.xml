@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_hint">Geben Sie hier den Text ein, den Sie teilen möchten</string>
+    <string name="app_name">Projekt für mobile Geräte</string>
+    <string name="image_button">BILD</string>
+    <string name="text_button">TEXT</string>
+    <string name="tag_hint">Geben Sie einen TAG ein</string>
+    <string name="no_tag">Bitte geben Sie einen TAG ein</string>
+
+    <string name="tag_place_desc">Ort, um einen TAG einzugeben</string>
+    <string name="tag_button_desc">Taste zum Senden des TAG</string>
+    <string name="text_place_desc">Wo der eingegebene TAG-verknüpfte Text angezeigt wird oder geändert oder erstellt werden kann</string>
+    <string name="image_button_desc">Taste zum Aufrufen des Bildschirms für die gemeinsame Nutzung von Bildern</string>
+    <string name="text_button_desc">Schaltfläche zum Aufrufen des Bildschirms für die Textfreigabe</string>
+    <string name="photo_button_desc">Taste zum Aufnehmen und Weitergeben von Bildern</string>
+    <string name="image_place_desc">Ort, an dem freigegebene Bilder angezeigt werden</string>
+    <string name="fullimage_place_desc">Stelle, an der das vergrößerte Bild erscheint</string>
+</resources>
